@@ -35,18 +35,9 @@
             user-select: none;
         }
         
-        .lead {
-            font-size: 30px;
-        }
-        
         body {
             background-color: transparent;
             background-color: rgb(77, 105, 129);
-        }
-        
-        .card {
-            background-color: rgb(77, 105, 129);
-            color: black;
         }
         
         .bottomNav {
@@ -78,6 +69,18 @@
             padding: 33px;
         }
         
+        .profile-content {
+            margin: auto;
+            width: 50%;
+        }
+
+        .profile-picture {
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
@@ -101,45 +104,55 @@
         </div>
     </nav>
 
-    <main>
-        <div class="container py-4">
-            <div class="px-4 py-5 my-5 text-center"> <img class="d-block mx-auto mb-4" src="pics/pic4.jpg" alt="" width="160" height="100" />
-                <h1 class="topic">Welcome to Foodie</h1>
-                <div class="col-lg-6 mx-auto">
-                    <p class="lead">Enjoy your meal and have fun!!</p>
-                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> <button type="button" class="btn btn-outline-warning btn-lg px-4 gap-3">Buy Membership</button> </div>
-                </div>
-            </div>
-
+    <div class="profile-content">
+        <img class="profile-picture" src="https://dummyimage.com/200x200/000/fff">
+        <br>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <label> Name </label>
         </div>
-    </main>
-
-    <div class="card-group">
-        <div class="card">
-            <img src="pics/p1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Spring Rolls</h5>
-                <br><br><br><br><br>
-            </div>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <input id="imput_name" type="text">
         </div>
-        <div class="card">
-            <img src="pics/p2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Wraps</h5>
-                <br><br><br> <br><br>
-            </div>
+        <br>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <label> Email </label>
         </div>
-        <div class="card">
-            <img src="pics/pc3.1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Pizza</h5>
-                <br><br><br> <br><br>
-            </div>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <input id="imput_email" type="text">
         </div>
+        <br>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                Nationality
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><button class="dropdown-item" type="button">Canada</button></li>
+                <li><button class="dropdown-item" type="button">Russia</button></li>
+                <li><button class="dropdown-item" type="button">South Korea</button></li>
+                <li><button class="dropdown-item" type="button">North Korea</button></li>
+            </ul>
+        </div>
+        <br>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-info btn-sm">Reset Food Preference</button>
+        </div>
+        <br>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg">Apply</button>
+        </div>
+        <br>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="#" class="link-dark">Log Out</a>
+        </div>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="#" class="link-dark">Forgot Password?</a>
+        </div>
+        
+        <br><br><br>
     </div>
+    
 
     <div class=" bottomNav">
-
         <footer class="navbar justify-content-evenly bg-warning fixed-bottom">
             <i class="material-icons">home</i>
             <i class="material-icons">favorite</i>
