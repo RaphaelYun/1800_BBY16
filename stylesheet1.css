@@ -1,0 +1,64 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.lead {
+    font-size: 30px;
+}
+
+body {
+    background-color: transparent;
+    background-color: rgb(77, 105, 129);
+}
+
+.card {
+    background-color: rgb(77, 105, 129);
+    color: black;
+}
+
+.bottomNav {
+    background-color: goldenrod;
+}
+
+.navbar {
+    width: auto;
+    overflow: auto;
+}
+
+.navbar a {
+    float: left;
+    color: rgb(73, 0, 73);
+    text-align: center;
+    padding: 33px;
+    text-decoration: none;
+    font-size: 27px;
+}
+
+.logo {
+    font-size: 30px;
+    color: goldenrod;
+}
+
+a:hover {
+    background-color: goldenrod;
+    color: black;
+    padding: 33px;
+}
+
+.btn {
+    border: none;
+    display: block;
+    margin-top: 70px;
+    margin-left: 350px;
+    width: 40vw;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
