@@ -24,6 +24,16 @@ body {
     background-color: goldenrod;
 }
 
+.form-outline {
+    background-color: whitesmoke;
+}
+
+.input-group {
+    margin-top: 18%;
+    width: 35%;
+    margin-left: 32%;
+}
+
 .navbar {
     width: auto;
     overflow: auto;
@@ -33,7 +43,7 @@ body {
     float: left;
     color: rgb(73, 0, 73);
     text-align: center;
-    padding: 33px;
+    padding: 0.5%;
     text-decoration: none;
     font-size: 27px;
 }
@@ -46,14 +56,14 @@ body {
 a:hover {
     background-color: goldenrod;
     color: black;
-    padding: 33px;
+    padding: auto;
 }
 
-.btn {
+.main-page .btn {
     border: none;
     display: block;
-    margin-top: 70px;
-    margin-left: 350px;
+    margin-top: 8%;
+    margin-left: 25%;
     width: 40vw;
 }
 
