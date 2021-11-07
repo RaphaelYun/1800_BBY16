@@ -33,37 +33,7 @@ body {
     height: 20%;
 }
 
-.menu2-2 {
-    width: 20%;
-    height: 20%;
-}
-
-.menu3-2 {
-    width: 20%;
-    height: 20%;
-}
-
-.menu4-2 {
-    width: 20%;
-    height: 20%;
-}
-
 .menu-1 {
-    color: goldenrod;
-    font-size: 25px;
-}
-
-.menu-2 {
-    color: goldenrod;
-    font-size: 25px;
-}
-
-.menu-3 {
-    color: goldenrod;
-    font-size: 25px;
-}
-
-.menu-4 {
     color: goldenrod;
     font-size: 25px;
 }
@@ -74,34 +44,8 @@ body {
     font-size: 20px;
 }
 
-.menu22 {
-    color: goldenrod;
-    margin-bottom: 5%;
-    font-size: 20px;
-}
-
-.menu32 {
-    color: goldenrod;
-    margin-bottom: 5%;
-    font-size: 20px;
-}
-
-.menu42 {
-    color: goldenrod;
-    margin-bottom: 5%;
-    font-size: 20px;
-}
-
-.menu2 {
-    background-color: rgb(32, 46, 59);
-}
-
-.menu4 {
-    background-color: rgb(32, 46, 59);
-}
-
-a {
-    color: gold;
+.map1 {
+    margin-top: -3%;
 }
 
 @media (min-width: 768px) {
