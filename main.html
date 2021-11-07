@@ -51,17 +51,21 @@
 
     <main class="main-page">
         <div class="random btn">
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> <button type="button" class="btn btn-danger btn-lg px-5 gap-4">Randomize</button> </div>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <form action="suggested.html"><button type="button" class="btn btn-danger btn-lg px-5 gap-4" action="suggested.html">Randomize</button></form>
+            </div>
         </div>
         <div class="prMeal btn">
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> <button type="button" class="btn btn-success btn-lg px-4 gap-4">Previous meals</button> </div>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <form action="previous.html"><button type="button" class="btn btn-success btn-lg px-4 gap-4">Previous meals</button></form>
+            </div>
         </div>
     </main>
     <div class=" bottomNav">
 
         <footer class="navbar justify-content-evenly bg-warning fixed-bottom">
-            <i class="material-icons">home</i>
-            <i class="material-icons">favorite</i>
+            <a href="main.html"><i class="material-icons">home</i></a>
+            <a href="favorite.html"> <i class="material-icons">favorite</i></a>
             <a href="profile.html"><i class="material-icons">account_circle</i></a>
             <a href="search.html"><i class="material-icons">search</i></a>
         </footer>

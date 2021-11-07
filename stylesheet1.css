@@ -59,9 +59,11 @@ a:hover {
     padding: auto;
 }
 
-.main-page .btn {
+main form {
     border: none;
-    display: block;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
     margin-top: 8%;
     margin-left: 25%;
     width: 40vw;
