@@ -1,0 +1,19 @@
+.form-outline {
+    background-color: whitesmoke;
+}
+
+.input-group {
+    margin-top: 18%;
+    width: 35%;
+    margin-left: 32%;
+}
+
+.main-page .btn {
+    border: none;
+    /* display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 100%; */
+    margin-top: 8%;
+    margin-left: 25%;
+    width: 40vw;
+}

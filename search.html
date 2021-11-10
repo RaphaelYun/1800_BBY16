@@ -41,23 +41,27 @@
     <script src="./scripts/my_script.js"></script>
     <!-- Google Icons (Material Design)-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheet1.css">
 
+    <!-- Link to the api keys for your firebase project -->
     <script src="scripts/firebaseAPI_BBY16.js"></script>
+
+    <link rel="stylesheet" href="./stylesheets/default.css">
+    <link rel="stylesheet" href="./stylesheets/search.css">
 </head>
 
 <body>
-
     <nav class="container">
         <div class="navbar">
             <div class="logo">
-                <p class="name"><i>Foodie</i></p>
+                <p class="name"><i>FOODIE</i></p>
             </div>
-            <a class="faq" href="#faq">FAQ</a>
-            <a class="contact" href="#contact">Contact Us</a>
-            <a class="setting" href="#setting">Setting</a>
-            <a class="about" href="#about">About</a>
-
+            <a class="navbarItem" id="faq" href="#faq">FAQ</a>
+            <a class="navbarItem" id="contact" href="#contact">Contact Us</a>
+            <a class="navbarItem" id="setting" href="#setting">Setting</a>
+            <a class="navbarItem" id="about" href="#about">About</a>
+            <form action="login.html">
+                <input type="submit" class="btn btn-outline-warning btn-lg px-4 gap-3" value="Sign In / Up" />
+            </form>
         </div>
     </nav>
 
@@ -69,13 +73,13 @@
             </span>
         </div>
     </main>
+    
     <div class=" bottomNav">
-
         <footer class="navbar justify-content-evenly bg-warning fixed-bottom">
             <i class="material-icons">home</i>
+            <i class="material-icons">search</i>
             <i class="material-icons">favorite</i>
             <i class="material-icons">account_circle</i>
-            <i class="material-icons">search</i>
         </footer>
     </div>
 

@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
+
     <title>Foodie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -25,27 +25,27 @@
 
     <!-- Google Icons (Material Design)-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheet1.css">
 
+    <!-- Link to the api keys for your firebase project -->
     <script src="scripts/firebaseAPI_BBY16.js"></script>
+
+    <link rel="stylesheet" href="./stylesheets/default.css">
+    <link rel="stylesheet" href="./stylesheets/main.css">
 </head>
 
 <body>
-
     <nav class="container">
         <div class="navbar">
             <div class="logo">
-                <p class="name"><i>Foodie</i></p>
+                <p class="name"><i>FOODIE</i></p>
             </div>
-            <a class="faq" href="#faq">FAQ</a>
-            <a class="contact" href="#contact">Contact Us</a>
-            <a class="setting" href="#setting">Setting</a>
-            <a class="about" href="#about">About</a>
-            <a class="about" href="#search">
-                <input type="search" name="search" id="searchBtn" placeholder="Search">
-                <a href="search.html"><i class="material-icons">search</i></a>
-            </a>
-
+            <a class="navbarItem" id="faq" href="#faq">FAQ</a>
+            <a class="navbarItem" id="contact" href="#contact">Contact Us</a>
+            <a class="navbarItem" id="setting" href="#setting">Setting</a>
+            <a class="navbarItem" id="about" href="#about">About</a>
+            <form action="login.html">
+                <input type="submit" class="btn btn-outline-warning btn-lg px-4 gap-3" value="Sign In / Up" />
+            </form>
         </div>
     </nav>
 
@@ -61,13 +61,13 @@
             </div>
         </div>
     </main>
-    <div class=" bottomNav">
 
+    <div class=" bottomNav">
         <footer class="navbar justify-content-evenly bg-warning fixed-bottom">
-            <a href="main.html"><i class="material-icons">home</i></a>
-            <a href="favorite.html"> <i class="material-icons">favorite</i></a>
-            <a href="profile.html"><i class="material-icons">account_circle</i></a>
-            <a href="search.html"><i class="material-icons">search</i></a>
+            <i class="material-icons">home</i>
+            <i class="material-icons">search</i>
+            <i class="material-icons">favorite</i>
+            <i class="material-icons">account_circle</i>
         </footer>
     </div>
 

@@ -2,9 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-
 
     <title>Foodie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,108 +25,37 @@
 
     <!-- Google Icons (Material Design)-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheet1.css">
 
+    <!-- Link to the api keys for your firebase project -->
     <script src="scripts/firebaseAPI_BBY16.js"></script>
 
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-        
-        .lead {
-            font-size: 40px;
-        }
-        
-        body {
-            background-color: transparent;
-            background-color: rgb(59, 79, 116);
-            /* background-image: url("/pics/");
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover; */
-        }
-        
-        .card {
-            background-color: rgb(32, 46, 59);
-            color: goldenrod;
-            border-color: gold;
-            border-width: 5px;
-        }
-        
-        .navbar {
-            width: auto;
-            overflow: auto;
-        }
-        
-        .navbar a {
-            float: left;
-            color: rgb(56, 1, 56);
-            text-align: center;
-            padding: 33px;
-            text-decoration: none;
-            font-size: 27px;
-        }
-        
-        .logo {
-            font-size: 30px;
-            color: goldenrod;
-            margin-top: 1.5%;
-        }
-        
-        .d-block {
-            border-radius: 50%;
-        }
-        
-        a:hover {
-            background-color: goldenrod;
-            color: black;
-            padding: 33px;
-        }
-        
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./stylesheets/default.css">
+    <link rel="stylesheet" href="./stylesheets/index.css">
 </head>
 
 <body>
-
     <nav class="container">
         <div class="navbar">
             <div class="logo">
                 <p class="name"><i>FOODIE</i></p>
             </div>
-            <a class="faq" href="#faq">FAQ</a>
-            <a class="contact" href="#contact">Contact Us</a>
-            <a class="setting" href="#setting">Setting</a>
-            <a class="about" href="#about">About</a>
-            <!-- <a class="sign" href="#sign">Sign In / Up</a> -->
-            <!-- <div class="sign"><button type="button" class="btn btn-outline-warning btn-lg px-4 gap-3">Sign In / Up</button></div> -->
+            <a class="navbarItem" id="faq" href="#faq">FAQ</a>
+            <a class="navbarItem" id="contact" href="#contact">Contact Us</a>
+            <a class="navbarItem" id="setting" href="#setting">Setting</a>
+            <a class="navbarItem" id="about" href="#about">About</a>
             <form action="login.html">
                 <input type="submit" class="btn btn-outline-warning btn-lg px-4 gap-3" value="Sign In / Up" />
             </form>
-
         </div>
     </nav>
 
     <main>
         <div class="container py-4">
 
-            <div class="px-4 py-5 my-5 text-center"> <img class="d-block mx-auto mb-4" src="/pics/logo1.jpg" alt="" width="160" height="160" />
+            <div class="px-4 py-5 my-5 text-center"> <img class="d-block mx-auto mb-4" id="frontLogo" src="/images/logo1.jpg" alt="" width="160" height="160" />
                 <h1 class="topic">Welcome to Foodie</h1>
                 <div class="col-lg-6 mx-auto">
                     <p class="lead">Enjoy your meal and have fun!!</p>
-
                 </div>
             </div>
 
@@ -137,7 +64,7 @@
 
     <div class="card-group">
         <div class="card">
-            <img src="pics/p1.jpg" class="card-img-top" alt="...">
+            <img src="images/p1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Spring Rolls</h5>
                 <p class="card-text">Mixture of kiwi and lemonade.</p>
@@ -145,7 +72,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="pics/p2.jpg" class="card-img-top" alt="...">
+            <img src="images/p2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Wraps</h5>
                 <p class="card-text">Mixture of kiwi and lemonade.</p>
@@ -153,7 +80,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="pics/pc3.1.jpg" class="card-img-top" alt="...">
+            <img src="images/pc3.1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Pizza</h5>
                 <p class="card-text">Mixture of kiwi and lemonade.</p>
@@ -162,15 +89,14 @@
         </div>
     </div>
 
-    <!-- <div class=" bottomNav">
-
+    <div class=" bottomNav">
         <footer class="navbar justify-content-evenly bg-warning fixed-bottom">
             <i class="material-icons">home</i>
+            <i class="material-icons">search</i>
             <i class="material-icons">favorite</i>
             <i class="material-icons">account_circle</i>
-            <i class="material-icons">search</i>
         </footer>
-    </div> -->
+    </div>
 
 
 
