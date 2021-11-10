@@ -34,11 +34,12 @@ body {
     color: goldenrod;
 }
 
-a:hover {
+
+/* a:hover {
     background-color: goldenrod;
     color: black;
     padding: 33px;
-}
+} */
 
 .profile-content {
     margin: auto;
