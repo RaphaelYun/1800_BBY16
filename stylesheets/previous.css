@@ -69,3 +69,11 @@
 .menu4 {
     background-color: rgb(32, 46, 59);
 }
+
+.moreInfo {
+    color: goldenrod;
+}
+
+.moreInfo:hover {
+    color: gold;
+}
