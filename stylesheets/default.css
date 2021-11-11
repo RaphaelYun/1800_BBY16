@@ -1,6 +1,10 @@
+:root {
+  --main-color: #f8e5df;
+}
+
 body {
   background-color: transparent;
-  background-color: rgb(59, 79, 116);
+  background-color: var(--main-color);
 }
 
 .navbar {

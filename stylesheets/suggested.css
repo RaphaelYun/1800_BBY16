@@ -62,13 +62,6 @@
     font-size: 20px;
 }
 
-.menu2 {
-    background-color: rgb(32, 46, 59);
-}
-
-.menu4 {
-    background-color: rgb(32, 46, 59);
-}
 
 .moreInfo {
     color: goldenrod;
@@ -76,4 +69,16 @@
 
 .moreInfo:hover {
     color: gold;
+}
+#about{
+  font-size: 18px;
+  color: black;
+}
+#about:hover{
+  color: goldenrod;
+  background-color: inherit;
+}
+.contacts{
+  margin-bottom: 4%;
+  text-align: center;
 }
