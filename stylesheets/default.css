@@ -1,39 +1,43 @@
+:root {
+    --main-color: #f8e5df;
+}
+
 body {
-  background-color: transparent;
-  background-color: rgb(59, 79, 116);
+    background-color: transparent;
+    background-color: var(--main-color);
 }
 
 .navbar {
-  width: auto;
-  overflow: auto;
+    width: auto;
+    overflow: auto;
 }
 
 .navbarItem {
-  float: left;
-  color: rgb(56, 1, 56);
-  text-align: center;
-  padding: 33px;
-  text-decoration: none;
-  font-size: 27px;
+    float: left;
+    color: rgb(56, 1, 56);
+    text-align: center;
+    padding: 33px;
+    text-decoration: none;
+    font-size: 27px;
 }
 
 .navbarItem:hover {
-  background-color: goldenrod;
-  color: black;
-  padding: 33px;
+    background-color: goldenrod;
+    color: black;
+    padding: 33px;
 }
 
 .name {
-  color: goldenrod;
-  font-size: 35px;
+    color: goldenrod;
+    font-size: 35px;
 }
 
 .bottomNav {
-  background-color: goldenrod;
+    background-color: goldenrod;
 }
 
 @media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-  }
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
 }
