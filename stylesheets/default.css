@@ -1,43 +1,52 @@
 :root {
+<<<<<<< HEAD
   --main-color: #f8e5df;
 }
 
 body {
   background-color: transparent;
   background-color: var(--main-color);
+=======
+    --main-color: #f8e5df;
+}
+
+body {
+    background-color: transparent;
+    background-color: var(--main-color);
+>>>>>>> 4161e486d03654ed0250d5e282481fda8e4f9f97
 }
 
 .navbar {
-  width: auto;
-  overflow: auto;
+    width: auto;
+    overflow: auto;
 }
 
 .navbarItem {
-  float: left;
-  color: rgb(56, 1, 56);
-  text-align: center;
-  padding: 33px;
-  text-decoration: none;
-  font-size: 27px;
+    float: left;
+    color: rgb(56, 1, 56);
+    text-align: center;
+    padding: 33px;
+    text-decoration: none;
+    font-size: 27px;
 }
 
 .navbarItem:hover {
-  background-color: goldenrod;
-  color: black;
-  padding: 33px;
+    background-color: goldenrod;
+    color: black;
+    padding: 33px;
 }
 
 .name {
-  color: goldenrod;
-  font-size: 35px;
+    color: goldenrod;
+    font-size: 35px;
 }
 
 .bottomNav {
-  background-color: goldenrod;
+    background-color: goldenrod;
 }
 
 @media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-  }
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
 }

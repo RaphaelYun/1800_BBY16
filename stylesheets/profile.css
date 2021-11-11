@@ -1,9 +1,9 @@
-.profile-content {
+#profile-content {
   margin: auto;
   width: 50%;
 }
 
-.profile-picture {
+#profile-picture {
   border-radius: 50%;
   display: block;
   margin-left: auto;
