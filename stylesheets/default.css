@@ -1,19 +1,12 @@
 :root {
-<<<<<<< HEAD
   --main-color: #f8e5df;
 }
 
 body {
   background-color: transparent;
   background-color: var(--main-color);
-=======
-    --main-color: #f8e5df;
-}
 
-body {
-    background-color: transparent;
-    background-color: var(--main-color);
->>>>>>> 4161e486d03654ed0250d5e282481fda8e4f9f97
+    --main-color: #f8e5df;
 }
 
 .navbar {

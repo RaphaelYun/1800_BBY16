@@ -82,3 +82,12 @@
   margin-bottom: 4%;
   text-align: center;
 }
+.card-group{
+  margin-top: 13%; 
+}
+.card {
+  background-color: inherit;
+  color: goldenrod;
+  border-color: gold;
+  border-width: 2.5px;
+}
