@@ -35,9 +35,9 @@
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
     <!-- MDB -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <script rel="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
     <!-- Optional styles and scripts of your own -->
-    <link type="text/css" href="./styles/my_style.css">
+    <link rel="text/css" href="./styles/my_style.css">
     <script src="./scripts/my_script.js"></script>
     <!-- Google Icons (Material Design)-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -53,15 +53,11 @@
     <nav class="container">
         <div class="navbar">
             <div class="logo">
-                <p class="name"><i>FOODIE</i></p>
+              <a href="./main.html" class="name"><i>FOODIE</i></a>
             </div>
-            <a class="navbarItem" id="faq" href="#faq">FAQ</a>
-            <a class="navbarItem" id="contact" href="#contact">Contact Us</a>
-            <a class="navbarItem" id="setting" href="#setting">Setting</a>
-            <a class="navbarItem" id="about" href="#about">About</a>
-            <form action="login.html">
-                <input type="submit" class="btn btn-outline-warning btn-lg px-4 gap-3" value="Sign In / Up" />
-            </form>
+            <a class="navbarItem" id="contact" href="./favorite.html">favorite</a>
+            <a class="navbarItem" id="setting" href="./profile.html">Profile</a>
+            <a class="navbarItem" id="search" href="./search.html">Search</a>
         </div>
     </nav>
 
@@ -73,18 +69,14 @@
             </span>
         </div>
     </main>
-    
-    <div class=" bottomNav">
-        <footer class="navbar justify-content-evenly bg-warning fixed-bottom">
-            <i class="material-icons">home</i>
-            <i class="material-icons">search</i>
-            <i class="material-icons">favorite</i>
-            <i class="material-icons">account_circle</i>
-        </footer>
-    </div>
 
-
-
+    <footer>
+      <div class="contacts">
+      <p id="email">Email: foodie16@gmail.com</p>
+      <p id="phone">Phone: 604-123-4567</p>
+      <a id="about" href="./about2.html">About</a>
+      </div>
+    </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

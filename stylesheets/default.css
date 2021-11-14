@@ -1,10 +1,12 @@
 :root {
-    --main-color: #f8e5df;
+  --main-color: #f8e5df;
 }
 
 body {
-    background-color: transparent;
-    background-color: var(--main-color);
+  background-color: transparent;
+  background-color: var(--main-color);
+
+    --main-color: #f8e5df;
 }
 
 .navbar {

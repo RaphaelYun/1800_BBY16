@@ -53,10 +53,6 @@
             <div class="logo">
                 <p class="name"><i>FOODIE</i></p>
             </div>
-            <a class="navbarItem" id="faq" href="#faq">FAQ</a>
-            <a class="navbarItem" id="contact" href="#contact">Contact Us</a>
-            <a class="navbarItem" id="setting" href="#setting">Setting</a>
-            <a class="navbarItem" id="about" href="#about">About</a>
             <form action="login.html">
                 <input type="submit" class="btn btn-outline-warning btn-lg px-4 gap-3" value="Sign In / Up" />
             </form>
@@ -64,7 +60,7 @@
     </nav>
 
     <div class="signin-content">
-        <h1 style="font-size: 80px; color: goldenrod; text-align: center;">Sign in</h1>
+        <h1 class="head" style="font-size: 80px; color: goldenrod; text-align: center;">Sign in</h1>
         <br>
         <main class="form-signin">
             <form>
@@ -73,18 +69,13 @@
             </form>
         </main>
     </div>
-
-    <div class=" bottomNav">
-        <footer class="navbar justify-content-evenly bg-warning fixed-bottom">
-            <i class="material-icons">home</i>
-            <i class="material-icons">search</i>
-            <i class="material-icons">favorite</i>
-            <i class="material-icons">account_circle</i>
-        </footer>
-    </div>
-
-
-
+    <footer>
+      <div class="contacts">
+      <p id="email">Email: foodie16@gmail.com</p>
+      <p id="phone">Phone: 604-123-4567</p>
+      <a id="about" href="./about.html">About</a>
+      </div>
+    </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -102,10 +93,23 @@
         var uiConfig = {
             callbacks: {
                 signInSuccessWithAuthResult: function(authResult, redirectUrl) {
-                    // User successfully signed in.
-                    // Return type determines whether we continue the redirect automatically
-                    // or whether we leave that to developer to handle.
-                    return true;
+                    var user = authResult.user;
+
+                    if (authResult.additionalUserInfo.isNewUser) { //if new user
+                        db.collection("users").doc(user.uid).set({ //write to firestore
+                                name: user.displayName, //"users" collection
+                                email: user.email //with authenticated user's ID (user.uid)
+                            }).then(function () {
+                                console.log("New user added to firestore");
+                                window.location.assign("preference.html"); //re-direct to main.html after signup
+                            })
+                            .catch(function (error) {
+                                console.log("Error adding new user: " + error);
+                            });
+                    } else {
+                        return true;
+                    }
+                    return false;
                 },
                 uiShown: function() {
                     // The widget is rendered.
@@ -115,7 +119,7 @@
             },
             // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
             signInFlow: 'popup',
-            signInSuccessUrl: 'main.html',
+            signInSuccessUrl: 'preference.html',
             signInOptions: [
                 // Leave the lines as is for the providers you want to offer your users.
                 // firebase.auth.GoogleAuthProvider.PROVIDER_ID,

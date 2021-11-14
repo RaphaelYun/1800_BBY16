@@ -41,3 +41,26 @@ html, body {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+#about{
+  font-size: 18px;
+  color: black;
+}
+#about:hover{
+  color: goldenrod;
+  background-color: inherit;
+}
+.contacts{
+  margin-top: 3%;
+  text-align: center;
+}
+.profile-picture{
+  border-radius: 50%;
+}
+.signin-content{
+  margin-top: 2%;
+  margin-left: 1%;
+}
+.head{
+  margin-bottom: 3%;
+  margin-right: 1%;
+}

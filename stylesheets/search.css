@@ -17,3 +17,18 @@
     margin-left: 25%;
     width: 40vw;
 }
+#about{
+  font-size: 18px;
+  color: black;
+}
+#about:hover{
+  color: goldenrod;
+  background-color: inherit;
+}
+.contacts{
+  margin-top: 4%;
+  text-align: center;
+}
+.form-control{
+  margin-left: 9%;
+}
