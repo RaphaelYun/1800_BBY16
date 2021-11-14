@@ -123,27 +123,27 @@
         }
         insertName();
 
-        function writeFoodList() {
+        // function writeFoodList() {
 
-            var foodRef = db.collection("Food");
+        //     var foodRef = db.collection("Food");
 
-            foodRef.add({
-                code: "FD1",
-                name: "Food 1",
-                description: "spring roll"
-            })
-            foodRef.add({
-                code: "FD2",
-                name: "Food 2",
-                description: "wrap"
-            })
-            foodRef.add({
-                code: "FD3",
-                name: "Food 3",
-                description: "pizza"
-            });
-        }
-        writeFoodList();
+        //     foodRef.add({
+        //         code: "FD1",
+        //         name: "Spring roll",
+        //         description: "food1"
+        //     })
+        //     foodRef.add({
+        //         code: "FD2",
+        //         name: "Wrap",
+        //         description: "food2"
+        //     })
+        //     foodRef.add({
+        //         code: "FD3",
+        //         name: "Pizza",
+        //         description: "food3"
+        //     });
+        // }
+        // writeFoodList();
 
         function displayFood() {
             db.collection("Food").get()
