@@ -34,8 +34,18 @@ body {
     font-size: 35px;
 }
 
-.bottomNav {
-    background-color: goldenrod;
+#contacts{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    text-align: center;
+  }
+#about{
+  font-size: 18px;
+  color: black;
+}
+#about:hover{
+  color: goldenrod;
+  background-color: inherit;
 }
 
 @media (min-width: 768px) {
