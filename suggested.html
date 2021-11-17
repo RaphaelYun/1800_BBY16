@@ -50,16 +50,16 @@
     <nav class="container">
         <div class="navbar">
             <div class="logo">
-              <a href="./main.html" class="name"><i>FOODIE</i></a>
+                <a href="./main.html" class="name"><i>FOODIE</i></a>
             </div>
-            <a class="navbarItem" id="contact" href="./favorite.html">favorite</a>
+            <a class="navbarItem" id="contact" href="./favorite.html">Favorite</a>
             <a class="navbarItem" id="setting" href="./profile.html">Profile</a>
             <a class="navbarItem" id="search" href="./search.html">Search</a>
 
         </div>
     </nav>
-    
-    
+
+
     <div class="container2">
         <div class="card-group">
 
@@ -94,11 +94,11 @@
     </div>
 
     <footer>
-      <div class="contacts">
-      <p id="email">Email: foodie16@gmail.com</p>
-      <p id="phone">Phone: 604-123-4567</p>
-      <a id="about" href="./about2.html">About</a>
-      </div>
+        <div class="contacts">
+            <p id="email">Email: foodie16@gmail.com</p>
+            <p id="phone">Phone: 604-123-4567</p>
+            <a id="about" href="./about2.html">About</a>
+        </div>
     </footer>
 
 
@@ -133,27 +133,27 @@
         }
         insertName();
 
-        // function writeFoodList() {
+        function writeFoodList() {
 
-        //     var foodRef = db.collection("Food");
+            var foodRef = db.collection("Food");
 
-        //     foodRef.add({
-        //         code: "FD1",
-        //         name: "Spring roll",
-        //         description: "food1"
-        //     })
-        //     foodRef.add({
-        //         code: "FD2",
-        //         name: "Wrap",
-        //         description: "food2"
-        //     })
-        //     foodRef.add({
-        //         code: "FD3",
-        //         name: "Pizza",
-        //         description: "food3"
-        //     });
-        // }
-        // writeFoodList();
+            foodRef.add({
+                code: "FD1",
+                name: "Spring roll",
+                description: "food1"
+            })
+            foodRef.add({
+                code: "FD2",
+                name: "Wrap",
+                description: "food2"
+            })
+            foodRef.add({
+                code: "FD3",
+                name: "Pizza",
+                description: "food3"
+            });
+        }
+        //writeFoodList();
 
         function displayFood() {
             db.collection("Food").get()
@@ -166,7 +166,7 @@
                     })
                 })
         }
-        displayFood();
+        //displayFood();
     </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
