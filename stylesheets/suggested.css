@@ -67,18 +67,6 @@
 .moreInfo:hover {
     color: gold;
 }
-#about{
-  font-size: 18px;
-  color: black;
-}
-#about:hover{
-  color: goldenrod;
-  background-color: inherit;
-}
-.contacts{
-  margin-bottom: 4%;
-  text-align: center;
-}
 .card-group{
   margin-top: 13%;
   
