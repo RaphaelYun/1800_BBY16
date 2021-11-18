@@ -41,18 +41,7 @@ html, body {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
-#about{
-  font-size: 18px;
-  color: black;
-}
-#about:hover{
-  color: goldenrod;
-  background-color: inherit;
-}
-.contacts{
-  margin-top: 3%;
-  text-align: center;
-}
+
 .profile-picture{
   border-radius: 50%;
 }
