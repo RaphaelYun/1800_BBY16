@@ -13,3 +13,18 @@ function addToFav(foodId) {
     });
 
 }
+
+function displayFavorites() {
+    firebase.auth().onAuthStateChanged(user => {
+        // Check if user is signed in:
+        if (user) {
+            // Do something for the current logged-in user here:
+            db.collection("users").doc(user.uid)
+                .get()
+                .then(function (doc) {
+                    var favs = doc.data().favorites;
+
+                })
+        }
+    });
+}
