@@ -217,6 +217,8 @@ function displayFood(randId) {
       newcard.querySelector('.card-text').setAttribute("id", "ctext" + title);
       newcard.querySelector('.card-image').setAttribute("id", "cimage_" + title);
 
+      newcard.querySelector('.like').addEventListener("click", function() { addToFav(doc.id) });
+
       document.getElementById('suggestionList').appendChild(newcard);
 
     })
