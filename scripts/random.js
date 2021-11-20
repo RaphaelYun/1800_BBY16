@@ -188,6 +188,28 @@ function getThreeFood() {
 
 }
 
+function addCard(doc, parent) {
+    let newcard = CardTemplate.content.cloneNode(true);
+    var title = doc.data().name;
+    //update title and text and image
+    newcard.querySelector('.card-title').innerHTML = doc.data().name;
+    newcard.querySelector('.card-text').innerHTML = doc.data().description;
+    newcard.querySelector('.card-image').src = "./images/pic1.jpeg";
+    //newcard.querySelector('.card-image').src = "./images/" + title + ".jpg";
+
+    //give unique ids to all elements for future use
+    newcard.querySelector('.card-title').setAttribute("id", "ctitle" + title);
+    newcard.querySelector('.card-text').setAttribute("id", "ctext" + title);
+    newcard.querySelector('.card-image').setAttribute("id", "cimage_" + title);
+
+    var likeButton = newcard.querySelector('.like');
+    if(likeButton) {
+        likeButton.addEventListener("click", function() { addToFav(doc.id) });
+    }
+
+    parent.appendChild(newcard);
+}
+
 function displayFood(randId) {
   db.collection("Food").get()
     .then(allFood => {
@@ -202,29 +224,51 @@ function displayFood(randId) {
       console.log(foodName);
       console.log(foodDescription);
 
-
-      let newcard = CardTemplate.content.cloneNode(true);
-      var title = doc.data().name;
-      var description = doc.data().description;
-      //update title and text and image
-      newcard.querySelector('.card-title').innerHTML = foodName;
-      newcard.querySelector('.card-text').innerHTML = foodDescription;
-      newcard.querySelector('.card-image').src = "./images/pic1.jpeg";
-      //newcard.querySelector('.card-image').src = "./images/" + title + ".jpg";
-
-      //give unique ids to all elements for future use
-      newcard.querySelector('.card-title').setAttribute("id", "ctitle" + title);
-      newcard.querySelector('.card-text').setAttribute("id", "ctext" + title);
-      newcard.querySelector('.card-image').setAttribute("id", "cimage_" + title);
-
-      newcard.querySelector('.like').addEventListener("click", function() { addToFav(doc.id) });
-
-      document.getElementById('suggestionList').appendChild(newcard);
-
+      addCard(doc, document.getElementById('suggestionList'))
     })
 }
-// displayFood();
 
+function addToFav(foodId) {
+    // debugger;
+    firebase.auth().onAuthStateChanged(user => {
+        // Check if user is signed in:
+        if (user) {
+            // Do something for the current logged-in user here: 
+            console.log("User id: " + user.uid);
+            var userDoc = db.collection("users").doc(user.uid);
+            userDoc.update({
+                favorites: firebase.firestore.FieldValue.arrayUnion(foodId)
+            });
+        }
+    });
 
+}
 
+function displayFavItem(foodId) {
+    db.collection("Food").doc(foodId).get().then(doc => {
+        console.log("FoodItem info: " + doc.data().name);
+        addCard(doc, document.getElementById('favoritesList'));
+    })
+}
 
+function displayFavorites() {
+    firebase.auth().onAuthStateChanged(user => {
+        // Check if user is signed in:
+        if (user) {
+            // Do something for the current logged-in user here:
+            db.collection("users").doc(user.uid)
+                .get()
+                .then(function (doc) {
+                    var favs = doc.data().favorites;
+                    console.log("favs[0]: " + favs[0]);
+                    favs.forEach(fav => {displayFavItem(fav)})
+                    // db.collection("Food").doc().then(function(favItems) {
+                    //     console.log("FoodItem info: " + favItems.docs[0].id)
+                    // })
+                    // db.collection("Food").where('id', 'in', favs).get().then(function(favItems) {
+                    //     console.log("FoodItem info: " + favItems.docs[0])
+                    // })
+                })
+        }
+    });
+}
