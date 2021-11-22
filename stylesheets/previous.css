@@ -1,81 +1,8 @@
-.menu1-2 {
-    width: 20%;
-    height: 20%;
-}
-
-.menu2-2 {
-    width: 20%;
-    height: 20%;
-}
-
-.menu3-2 {
-    width: 20%;
-    height: 20%;
-}
-
-.menu4-2 {
-    width: 20%;
-    height: 20%;
-}
-
-.menu-1 {
-    color: goldenrod;
-    font-size: 25px;
-}
-
-.menu-2 {
-    color: goldenrod;
-    font-size: 25px;
-}
-
-.menu-3 {
-    color: goldenrod;
-    font-size: 25px;
-}
-
-.menu-4 {
-    color: goldenrod;
-    font-size: 25px;
-}
-
-.menu12 {
-    color: goldenrod;
-    margin-bottom: 5%;
-    font-size: 20px;
-}
-
-.menu22 {
-    color: goldenrod;
-    margin-bottom: 5%;
-    font-size: 20px;
-}
-
-.menu32 {
-    color: goldenrod;
-    margin-bottom: 5%;
-    font-size: 20px;
-}
-
-.menu42 {
-    color: goldenrod;
-    margin-bottom: 5%;
-    font-size: 20px;
-}
-
-.moreInfo {
-    color: goldenrod;
-}
-
-.moreInfo:hover {
-    color: gold;
-}
-
-.card-group{
-  margin-top: 13%; 
-}
-.card {
-  background-color: inherit;
-  color: goldenrod;
-  border-color: gold;
-  border-width: 2.5px;
-}
+#previousList {
+    margin: auto;
+    width: 90%;
+    /*
+    height: 200px;
+    overflow: scroll;
+    */
+  }
