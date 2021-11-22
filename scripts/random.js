@@ -188,6 +188,8 @@ function getThreeFood() {
 
 }
 
+// getThreeFood();
+
 function displayFood(randId) {
   db.collection("Food").get()
     .then(allFood => {
@@ -220,6 +222,8 @@ function displayFood(randId) {
       document.getElementById('suggestionList').appendChild(newcard);
 
     })
+
+
 }
 // displayFood();
 
