@@ -2,182 +2,102 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 
-    <title>Foodie</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foodie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-
-    <!-- Bootstrap core CSS -->
-    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
-    <meta name="theme-color" content="#7952b3">
-
-    <!-- Google Icons (Material Design)-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!-- Bootstrap FirebaseUI CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
-    <!-- Firebase 8 CDNs-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
-    </script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
-    <!-- Link to the api keys for your firebase project -->
-    <script src="./scripts/firebaseAPI_BBY16.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./stylesheets/default.css">
-    <link rel="stylesheet" href="./stylesheets/suggested.css">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+  <meta name="theme-color" content="#7952b3">
+
+  <!-- Google Icons (Material Design)-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Bootstrap FirebaseUI CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+
+
+  <!-- Firebase 8 CDNs-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+  <!-- Link to the api keys for your firebase project -->
+  <script src="./scripts/firebaseAPI_BBY16.js"></script>
+
+  <link rel="stylesheet" href="./stylesheets/default.css">
+  <link rel="stylesheet" href="./stylesheets/suggested.css">
 </head>
 
 <body>
-    <nav class="container">
-        <div class="navbar">
-            <div class="logo">
-              <a href="./main.html" class="name"><i>FOODIE</i></a>
-            </div>
-<<<<<<< HEAD
-            <a class="navbarItem" id="contact" href="./favorite.html">favorite</a>
-            <a class="navbarItem" id="setting" href="./profile.html">Profile</a>
-            <a class="navbarItem" id="search" href="./search.html">Search</a>
-=======
+  <div id="logo">
+    <a href="./main.html" id="name">FOODIE</a>
+  </div>
 
->>>>>>> 4161e486d03654ed0250d5e282481fda8e4f9f97
-        </div>
-    </nav>
-
-    <!-- <div class="menu"> -->
-
-<<<<<<< HEAD
+  <section id="content">
+    <div id="suggestionList" class="row row-cols-auto">
     </div>
-    <footer>
-      <div class="contacts">
-      <p id="email">Email: foodie@gmail.com16</p>
-      <p id="phone">Phone: 604-123-4567</p>
-      <a id="about" href="./about2.html">About</a>
-      </div>
-    </footer>
-=======
-    <div class="container">
-        <div class="card-group">
+  </section>
 
-            <div class="card" style="width: 18rem;">
-                <img src="./images/p1.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title" id="FD1">Food name</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Read more</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="./images/p2.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title" id="FD2">Food name</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Read more</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="./images/pc3.1.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title" id="FD3">Food name</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Read more</a>
-                </div>
-            </div>
-
-        </div>
+  <nav id="navbar">
+    <div class="navbarItem">
+      <button class="navbarIcon" onclick="location.href='./favorite.html';">
+        <i class="material-icons">favorite</i>
+      </button>
     </div>
->>>>>>> 4161e486d03654ed0250d5e282481fda8e4f9f97
+    <div class="navbarItem">
+      <button class="navbarIcon" onclick="location.href='./search.html';">
+        <i class="material-icons">search</i>
+      </button>
+    </div>
+    <div class="navbarItem">
+      <button class="navbarIcon" onclick="location.href='./profile.html';">
+        <i class="material-icons">account_circle</i>
+      </button>
+    </div>
+  </nav>
+
+  <template id="CardTemplate">
+    <div class="card py-2 mx-0">
+      <img class="card-image card-img-top" src="..." alt="...">
+      <h5 class="card-title">Card title</h5>
+    </div>
+  </template>
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-    <script>
-        function insertName() {
-            firebase.auth().onAuthStateChanged(user => {
-                // Check if user is signed in:
-                if (user) {
-                    // Do something for the current logged-in user here: 
-                    console.log(user.uid);
-                    //go to the correct user document by referencing to the user uid
-                    currentUser = db.collection("users").doc(user.uid);
-                    //get the document for current user.
-                    currentUser.get()
-                        .then(userDoc => {
-                            var user_Name = userDoc.data().name;
-                            console.log(user_Name);
-                            //method #1:  insert with html only
-                            document.getElementById("name-goes-here").innerText = user_Name; //using javascript
-                            //method #2:  insert using jquery
-                            //$("#name-goes-here").text(user_Name); //using jquery
-                        })
-                } else {
-                    // No user is signed in.
-                }
-            });
-        }
-        insertName();
+  <!-- Optional JavaScript; choose one of the two! -->
 
-        function writeFoodList() {
+  <script src="./scripts/suggested.js"></script>
 
-            var foodRef = db.collection("Food");
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
 
-            foodRef.add({
-                code: "FD1",
-                name: "Food 1",
-                description: "spring roll"
-            })
-            foodRef.add({
-                code: "FD2",
-                name: "Food 2",
-                description: "wrap"
-            })
-            foodRef.add({
-                code: "FD3",
-                name: "Food 3",
-                description: "pizza"
-            });
-        }
-        writeFoodList();
-
-        function displayFood() {
-            db.collection("Food").get()
-                .then(allFood => {
-                    allFood.forEach(doc => {
-                        var foodName = doc.data().name;
-                        var foodID = doc.data().code;
-                        console.log(foodID);
-                        document.getElementById(foodID).innerText = foodName;
-                    })
-                })
-        }
-        displayFood();
-    </script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->

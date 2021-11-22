@@ -1,84 +1,10 @@
-.menu1-2 {
-    width: 20%;
-    height: 20%;
+#suggestionList {
+  margin: auto;
+  width: 90%;
+  height: 100%;
+  overflow: scroll;
 }
 
-.menu2-2 {
-    width: 20%;
-    height: 20%;
-}
-
-.menu3-2 {
-    width: 20%;
-    height: 20%;
-}
-
-.menu4-2 {
-    width: 20%;
-    height: 20%;
-}
-
-.menu-1 {
-    color: goldenrod;
-    font-size: 25px;
-}
-
-.menu-2 {
-    color: goldenrod;
-    font-size: 25px;
-}
-
-.menu-3 {
-    color: goldenrod;
-    font-size: 25px;
-}
-
-.menu-4 {
-    color: goldenrod;
-    font-size: 25px;
-}
-
-.menu12 {
-    color: goldenrod;
-    margin-bottom: 5%;
-    font-size: 20px;
-}
-
-.menu22 {
-    color: goldenrod;
-    margin-bottom: 5%;
-    font-size: 20px;
-}
-
-.menu32 {
-    color: goldenrod;
-    margin-bottom: 5%;
-    font-size: 20px;
-}
-
-.menu42 {
-    color: goldenrod;
-    margin-bottom: 5%;
-    font-size: 20px;
-}
-
-
-.moreInfo {
-    color: goldenrod;
-}
-
-.moreInfo:hover {
-    color: gold;
-}
-#about{
-  font-size: 18px;
-  color: black;
-}
-#about:hover{
-  color: goldenrod;
-  background-color: inherit;
-}
-.contacts{
-  margin-bottom: 4%;
-  text-align: center;
+.card {
+  margin-bottom: 10px;
 }
