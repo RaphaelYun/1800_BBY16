@@ -6,21 +6,9 @@
     background-color: inherit;
     color: goldenrod;
     border-color: gold;
-    border-width: 5px;
+    border-width: 2.5px;
 }
 
 #frontLogo {
     border-radius: 50%;
-}
-
-#about{
-  font-size: 18px;
-  color: black;
-}
-#about:hover{
-  color: goldenrod;
-}
-.contacts{
-  margin-bottom: 4%;
-  text-align: center;
 }
