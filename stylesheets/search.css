@@ -3,29 +3,16 @@
 }
 
 .input-group {
-    margin-top: 18%;
-    width: 35%;
-    margin-left: 32%;
+    width: 95%;
+    margin: 0 auto;
 }
 
-.main-page .btn {
-    border: none;
-    /* display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 100%; */
-    margin-top: 8%;
-    margin-left: 25%;
-    width: 40vw;
+#searchResult {
+  margin: auto;
+  width: 90%;
+  height: 100%;
 }
-#about{
-  font-size: 18px;
-  color: black;
-}
-#about:hover{
-  color: goldenrod;
-  background-color: inherit;
-}
-.contacts{
-  margin-bottom: 4%;
-  text-align: center;
+
+.card {
+  margin-bottom: 10px;
 }

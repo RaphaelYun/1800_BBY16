@@ -157,4 +157,3 @@ function displayFood(randId) {
       document.getElementById('suggestionList').appendChild(newcard);
     })
 }
-// displayFood();

@@ -20,7 +20,6 @@ function search() {
 
           //give unique ids to all elements for future use
           newcard.querySelector('.card-title').setAttribute("id", "ctitle_" + foodId);
-          newcard.querySelector('.card-text').setAttribute("id", "ctext_" + foodId);
           newcard.querySelector('.card-image').setAttribute("id", "cimage_" + foodId);
 
           //attach to gallery

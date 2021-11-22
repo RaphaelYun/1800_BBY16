@@ -57,14 +57,16 @@
     </div>
 
     <section id="content">
-        <h1 style="font-size: 80px; color: goldenrod; text-align: center;">Sign in</h1>
-        <br>
-        <main class="form-signin">
-            <form>
-                <div id="firebaseui-auth-container"></div>
-                <div id="loader">Loading...</div>
-            </form>
-        </main>
+        <div class="profile-content">
+            <h1 style="font-size: 80px; color: goldenrod; text-align: center;">Sign in</h1>
+            <br>
+            <main class="form-signin">
+                <form>
+                    <div id="firebaseui-auth-container"></div>
+                    <div id="loader">Loading...</div>
+                </form>
+            </main>
+        </div>
     </section>
 
     <nav id="navbar">
@@ -109,7 +111,8 @@
                     if (authResult.additionalUserInfo.isNewUser) { //if new user
                         db.collection("users").doc(user.uid).set({ //write to firestore
                                 name: user.displayName, //"users" collection
-                                email: user.email //with authenticated user's ID (user.uid)
+                                email: user.email, //with authenticated user's ID (user.uid)
+                                favorites: firebase.firestore.FieldValue.arrayUnion()
                             }).then(function () {
                                 console.log("New user added to firestore");
                                 window.location.assign(
