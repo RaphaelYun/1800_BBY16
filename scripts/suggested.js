@@ -7,8 +7,7 @@ function writeFoodList() {
             "The kind of wrapper, fillings, and cooking technique used, as well as the name, vary considerably within this large area, depending on the region's culture.",
         emotion: "happy",
         nationallity: "vietnamese",
-        allergy: "may contain peanuts",
-        picture: "./pics/p1.jpg"
+        allergy: "may contain peanuts"
     })
 
     foodRef.add({
@@ -19,8 +18,7 @@ function writeFoodList() {
             "shredded lettuce, diced tomato or pico de gallo, guacamole, sauteed mushrooms, bacon, grilled onions, cheese, and a sauce, such as ranch or honey mustard. ",
         emotion: "hungry",
         nationallity: "american",
-        allergy: "lactose",
-        picture: "./pics/p2.jpg"
+        allergy: "lactose"
     })
 
     foodRef.add({
@@ -31,8 +29,7 @@ function writeFoodList() {
             "is sometimes called a pizzetta",
         emotion: "hungry",
         nationallity: "italian",
-        allergy: "lactose",
-        picture: "./pics/p3.jpg"
+        allergy: "lactose"
     })
 
     foodRef.add({
@@ -42,8 +39,7 @@ function writeFoodList() {
             "Tomato sauces are common for meat and vegetables, but they are perhaps best known as bases for Mexican salsas or sauces for pasta dishes",
         emotion: "sad",
         nationallity: "italian",
-        allergy: "may contain peanuts",
-        picture: "./pics/p4.jpg"
+        allergy: "may contain peanuts"
     })
 
     foodRef.add({
@@ -53,8 +49,7 @@ function writeFoodList() {
             "region, though its origins are uncertain and there are several competing claims of having invented the dish.",
         emotion: "sad",
         nationallity: "canadian",
-        allergy: "none",
-        picture: "./pics/p5.jpg"
+        allergy: "none"
 
     })
 
@@ -65,8 +60,7 @@ function writeFoodList() {
             "a sliced bread roll or bun. The patty may be pan fried, grilled, smoked or flame broiled",
         emotion: "hungry",
         nationallity: "american",
-        allergy: "contain meet",
-        picture: "./pics/p6.jpg"
+        allergy: "contain meet"
     })
 
     foodRef.add({
@@ -76,8 +70,7 @@ function writeFoodList() {
             "Dijon mustard, Parmesan cheese, and black pepper. In its original form, this salad was prepared and served tableside",
         emotion: "happy",
         nationallity: "italian",
-        allergy: "none",
-        picture: "./pics/p7.jpg"
+        allergy: "none"
     })
 
     foodRef.add({
@@ -87,8 +80,7 @@ function writeFoodList() {
             "Steak can also be cooked in sauce, such as in steak and kidney pie, or minced and formed into patties, such as hamburgers",
         emotion: "hungry",
         nationallity: "american",
-        allergy: "contain meet",
-        picture: "./pics/p8.jpg"
+        allergy: "contain meet"
     })
 
     foodRef.add({
@@ -98,8 +90,7 @@ function writeFoodList() {
             "and sugar. If there is a bottom layer, it most often consists of a crust or base made from crushed cookies, graham crackers, pastry, or sometimes sponge cake.",
         emotion: "sad",
         nationallity: "italian",
-        allergy: "lactose",
-        picture: "./pics/p9.jpg"
+        allergy: "lactose"
 
     })
 
@@ -110,8 +101,7 @@ function writeFoodList() {
             "either sugar or an alternative, and a spice, such as cocoa or vanilla, or with fruit such as strawberries or peaches",
         emotion: "sad",
         nationallity: "french",
-        allergy: "lactose",
-        picture: "./pics/p10.jpg"
+        allergy: "lactose"
     })
 
     foodRef.add({
@@ -120,8 +110,7 @@ function writeFoodList() {
         description: "Combo of Ice cream and cake",
         emotion: "happy",
         nationallity: "american",
-        allergy: "lactose",
-        picture: "./pics/p11.jpg"
+        allergy: "lactose"
     })
 
     foodRef.add({
@@ -132,8 +121,7 @@ function writeFoodList() {
             "feast and can be found on most menus across the country.",
         emotion: "happy",
         nationallity: "italian",
-        allergy: "lactose",
-        picture: "./pics/p12.jpg"
+        allergy: "lactose"
     })
     foodRef.add({
         code: "13",
@@ -142,8 +130,7 @@ function writeFoodList() {
             "a layer of jam sandwiching two lamington halves.",
         emotion: "happy",
         nationallity: "australian",
-        allergy: "none",
-        picture: "./pics/p13.jpg"
+        allergy: "none"
     })
     foodRef.add({
         code: "14",
@@ -152,8 +139,7 @@ function writeFoodList() {
             "It’s normally made in big tins, baked and then drizzled with even more syrup before cutting into smaller pieces.",
         emotion: "happy",
         nationallity: "turkish",
-        allergy: "nuts",
-        picture: "./pics/p14.jpg"
+        allergy: "nuts"
     })
     foodRef.add({
         code: "15",
@@ -162,8 +148,7 @@ function writeFoodList() {
             "either fudgy or cakey, depending on their density. They may include nuts, frosting, cream cheese, chocolate chips, or other ingredients.",
         emotion: "happy",
         nationallity: "american",
-        allergy: "none",
-        picture: "./pics/p15.jpg"
+        allergy: "none"
     })
     foodRef.add({
         code: "16",
@@ -171,8 +156,7 @@ function writeFoodList() {
         description: "house greens, edamame, corn, black beans, feta, dates, walnut, honey lime vinaigrette, garlic croutons",
         emotion: "hungry",
         nationallity: "american",
-        allergy: "none",
-        picture: "./pics/p16.jpg"
+        allergy: "none"
     })
     foodRef.add({
         code: "17",
@@ -180,8 +164,7 @@ function writeFoodList() {
         description: "prawn tempura, sweet soy glaze",
         emotion: "hungry",
         nationallity: "japaneese",
-        allergy: "none",
-        picture: "./pics/p17.jpg"
+        allergy: "none"
     })
     foodRef.add({
         code: "18",
@@ -189,8 +172,7 @@ function writeFoodList() {
         description: "five spice chicken, peanuts, crispy noodles, spicy kung pao sauce | veggie lettuce wraps",
         emotion: "hungry",
         nationallity: "chineese",
-        allergy: "none",
-        picture: "./pics/p18.jpg"
+        allergy: "none"
     })
     foodRef.add({
         code: "19",
@@ -198,8 +180,7 @@ function writeFoodList() {
         description: "charred jalapeno ranch, aged parmesan",
         emotion: "hungry",
         nationallity: "american",
-        allergy: "lactose",
-        picture: "./pics/p19.jpg"
+        allergy: "lactose"
     })
     foodRef.add({
         code: "20",
@@ -207,8 +188,7 @@ function writeFoodList() {
         description: "a smaller helping of our loaded nachos",
         emotion: "hungry",
         nationallity: "mexican",
-        allergy: "garlic",
-        picture: "./pics/p20.jpg"
+        allergy: "garlic"
     });
 }
 
@@ -230,7 +210,6 @@ function displayFood(randId) {
 
             var foodId = doc.data().code;
             var foodName = doc.data().name;
-            var foodPic = doc.data().picture;
             console.log(foodId);
 
             //create a card using the pre-defined template;
@@ -238,14 +217,14 @@ function displayFood(randId) {
 
             //update title and text and image
             newcard.querySelector('.card-title').innerHTML = foodName;
-            newcard.querySelector('.card-image').innerHTML = foodPic;
+            newcard.querySelector('.card-image').src = "./images/foods/p" + foodId + ".jpg";
             newcard.querySelector('.card').onclick = function() {
                 window.location.href = "details.html?collection=" + "Food" + "&id=" + doc.id;
             };
 
             //give unique ids to all elements for future use
             newcard.querySelector('.card-title').setAttribute("id", "ctitle" + foodId);
-            newcard.querySelector('.card-image').setAttribute("id", "cimage_" + foodPic);
+            newcard.querySelector('.card-image').setAttribute("id", "cimage" + foodId);
 
             //attach to gallery
             document.getElementById('suggestionList').appendChild(newcard);
