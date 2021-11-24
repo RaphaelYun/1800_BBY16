@@ -1,17 +1,14 @@
 .input-group {
-    margin-top: 18%;
-    width: 35%;
-    margin-left: 32%;
+    width: 95%;
+    margin: 0 auto;
 }
 
-.form-control{
-  margin-left: 9%;
+#searchResult {
+  margin: auto;
+  width: 90%;
+  height: 100%;
 }
 
-#searchButton {
-    background-color: transparent;
-    border: none;
-    color: black;
-    border: 0;
-    margin: 0;
+.card {
+  margin-bottom: 10px;
 }

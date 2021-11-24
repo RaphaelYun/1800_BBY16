@@ -1,0 +1,11 @@
+#foodDetails {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#foodName {
+    text-align: center;
+}
