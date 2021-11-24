@@ -35,12 +35,16 @@ function savePreference() {
   userCuisine2 = document.getElementById('CuisinePreference2').value;
 
   //write the values in the database
-  currentUser.update({
-      FavoriteCuisine1: userCuisine1,
-      FavoriteCuisine2: userCuisine2
-    })
-    .then(() => {
-      console.log("Document successfully updated!");
-      window.location.href = "main.html";
-    })
+  firebase.auth().onAuthStateChanged(user => {
+    if (user) {
+      db.collection("users").doc(user.uid).update({
+          FavoriteCuisine1: userCuisine1,
+          FavoriteCuisine2: userCuisine2
+        })
+        .then(() => {
+          console.log("Document successfully updated!");
+          window.location.href = "main.html";
+        })
+    }
+  })
 }

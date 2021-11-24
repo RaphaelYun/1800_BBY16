@@ -19,9 +19,10 @@ body {
 
 #content {
     width: 100%;
-    height: calc(100vh - 125px);
+    height: calc(100vh - 115px);
     overflow: scroll;
-    /* background-image: url("../images/pic2.jpg"); */
+    background-image: url("../images/pic2.jpg");
+    padding: 10px;
 }
 
 #navbar {

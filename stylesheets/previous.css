@@ -1,8 +1,9 @@
 #previousList {
-    margin: auto;
-    width: 90%;
-    /*
-    height: 200px;
-    overflow: scroll;
-    */
-  }
+  margin: auto;
+  width: 90%;
+  height: 100%;
+}
+
+.card {
+  margin-bottom: 10px;
+}

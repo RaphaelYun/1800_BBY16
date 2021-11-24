@@ -7,7 +7,7 @@ function writeFoodList() {
             "The kind of wrapper, fillings, and cooking technique used, as well as the name, vary considerably within this large area, depending on the region's culture.",
         emotion: "happy",
         nationallity: "vietnamese",
-        allergy: "may contain peanuts"
+        allergy: "peanuts"
     })
 
     foodRef.add({
@@ -39,7 +39,7 @@ function writeFoodList() {
             "Tomato sauces are common for meat and vegetables, but they are perhaps best known as bases for Mexican salsas or sauces for pasta dishes",
         emotion: "sad",
         nationallity: "italian",
-        allergy: "may contain peanuts"
+        allergy: "peanuts"
     })
 
     foodRef.add({
