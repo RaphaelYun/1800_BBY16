@@ -65,24 +65,24 @@
 
   <nav id="navbar">
     <div class="navbarItem">
-        <button class="navbarIcon" onclick="location.href='./favorite.html';">
-            <i class="material-icons">favorite</i>
-        </button>
+      <button class="navbarIcon" onclick="gotoFavorite()">
+        <i class="material-icons">favorite</i>
+      </button>
     </div>
     <div class="navbarItem">
-        <button class="navbarIcon" onclick="location.href='./previous.html';">
-            <i class="material-icons">watch_later</i>
-        </button>
+      <button class="navbarIcon" onclick="gotoPrevious()">
+        <i class="material-icons">watch_later</i>
+      </button>
     </div>
     <div class="navbarItem">
-        <button class="navbarIcon" onclick="location.href='./search.html';">
-            <i class="material-icons">search</i>
-        </button>
+      <button class="navbarIcon" onclick="gotoSearch()">
+        <i class="material-icons">search</i>
+      </button>
     </div>
     <div class="navbarItem">
-        <button class="navbarIcon" onclick="location.href='./profile.html';">
-            <i class="material-icons">account_circle</i>
-        </button>
+      <button class="navbarIcon" onclick="gotoProfile()">
+        <i class="material-icons">account_circle</i>
+      </button>
     </div>
   </nav>
 
@@ -93,7 +93,11 @@
     </div>
   </template>
 
-
+  <template id="ClosureTemplate">
+    <div class="card">
+      <h5 class="card-title" id="closureText">No result found</h5>
+    </div>
+  </template>
 
   <!-- Optional JavaScript; choose one of the two! -->
 
@@ -108,6 +112,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
 
+  <script src="./scripts/default.js"></script>
   <script src="./scripts/favorite.js"></script>
 </body>
 

@@ -1,14 +1,30 @@
 .input-group {
     width: 95%;
+    height: 10%;
     margin: 0 auto;
+}
+
+#searchButton {
+  height: 70%;
+  margin-left: 5px;
 }
 
 #searchResult {
   margin: auto;
-  width: 90%;
-  height: 100%;
+  width: 95%;
+  height: 90%;
 }
 
 .card {
+  width: 100%;
   margin-bottom: 10px;
+}
+
+.card-title {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+#closureText {
+  text-align: center;
 }

@@ -19,18 +19,29 @@ function showDetails() {
               if (favoriteList.includes(doc.data().code)) {
                 document.getElementById("foodFavorite").innerHTML = "Remove from Favorite";
                 document.getElementById("foodFavorite").onclick = function () {
-                  db.collection("users").doc(user.uid).update({
-                    favorites: firebase.firestore.FieldValue.arrayRemove(doc.data().code)
-                  });
-                  showDetails();
+                  if (user) {
+                    db.collection("users").doc(user.uid).update({
+                      favorites: firebase.firestore.FieldValue.arrayRemove(doc.data().code)
+                    });
+                    showDetails();
+                  } else {
+                    alert("You must be logged in.");
+                    window.location.assign("login.html");
+                  }
+
                 };
               } else {
                 document.getElementById("foodFavorite").innerHTML = "Add to Favorite";
                 document.getElementById("foodFavorite").onclick = function () {
-                  db.collection("users").doc(user.uid).update({
-                    favorites: firebase.firestore.FieldValue.arrayUnion(doc.data().code)
-                  });
-                  showDetails();
+                  if (user) {
+                    db.collection("users").doc(user.uid).update({
+                      favorites: firebase.firestore.FieldValue.arrayUnion(doc.data().code)
+                    });
+                    showDetails();
+                  } else {
+                    alert("You must be logged in.");
+                    window.location.assign("login.html");
+                  }
                 };
               }
 
@@ -48,29 +59,29 @@ function addToPrevious() {
   let id = params.searchParams.get("id"); //parse "id"
 
   db.collection(collection).doc(id).get()
-  .then((doc) => {
-    firebase.auth().onAuthStateChanged(user => {
-      if (user) {
-        db.collection("users").doc(user.uid).get()
-          .then(userDoc => {
-            //get the user's previous list
-            var previousList = userDoc.data().previous;
-            for (var i = 0; i < previousList.length; i++) {
-              if (doc.data().code == previousList[i]) {
-                previousList.splice(i, 1);
-                break;
+    .then((doc) => {
+      firebase.auth().onAuthStateChanged(user => {
+        if (user) {
+          db.collection("users").doc(user.uid).get()
+            .then(userDoc => {
+              //get the user's previous list
+              var previousList = userDoc.data().previous;
+              for (var i = 0; i < previousList.length; i++) {
+                if (doc.data().code == previousList[i]) {
+                  previousList.splice(i, 1);
+                  break;
+                }
               }
-            }
-            previousList.splice(0, 0, doc.data().code);
-            while (previousList.length > 10) {
-              previousList.pop();
-            }
-            db.collection("users").doc(user.uid).update({
-              previous: previousList
-            })
-          });
-      }
+              previousList.splice(0, 0, doc.data().code);
+              while (previousList.length > 10) {
+                previousList.pop();
+              }
+              db.collection("users").doc(user.uid).update({
+                previous: previousList
+              })
+            });
+        }
+      })
     })
-  })
 }
 addToPrevious();
