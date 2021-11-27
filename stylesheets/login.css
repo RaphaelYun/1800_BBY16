@@ -1,18 +1,6 @@
-.profile-content {
+.login-content {
     margin: auto;
     width: 90%;
-    height: 100%;
-    overflow: scroll;
-}
-
-.profile-picture {
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-html, body {
     height: 100%;
 }
 
@@ -22,6 +10,8 @@ html, body {
     padding: 15px;
     margin: auto;
 }
+
+/*
 
 .form-signin .checkbox {
     font-weight: 400;
@@ -35,7 +25,7 @@ html, body {
 .form-signin input[type="username"] {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+    border-bottom-left-radius:  0;
 }
 
 .form-signin input[type="password"] {
@@ -43,3 +33,5 @@ html, body {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
+*/
