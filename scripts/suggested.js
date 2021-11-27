@@ -199,6 +199,7 @@ function displayFood(randId) {
 
             var foodId = doc.data().code;
             var foodName = doc.data().name;
+            var foodPic = doc.data().picture;
             console.log(foodId);
 
             //create a card using the pre-defined template;
@@ -206,6 +207,8 @@ function displayFood(randId) {
 
             //update title and text and image
             newcard.querySelector('.card-title').innerHTML = foodName;
+            //newcard.querySelector('.card-image').src = "./images/pic1.jpeg";
+            newcard.querySelector('.card-image').innerHTML = foodPic;
             newcard.querySelector('.card-image').src = "./images/pic1.jpeg";
             newcard.querySelector('.card').onclick = function() {
                 window.location.href = "details.html?collection=" + "Food" + "&id=" + doc.id;
