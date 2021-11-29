@@ -16,7 +16,7 @@ function search() {
   
             //update title and text and image
             newcard.querySelector('.card-title').innerHTML = foodName;
-            newcard.querySelector('.card-image').src = "./images/pic1.jpeg";
+            newcard.querySelector('.card-image').src = "./images/foods/p" + foodId + ".jpg";
             newcard.querySelector('.card').onclick = function () {
               window.location.href = "details.html?collection=" + "Food" + "&id=" + doc.id;
             };
