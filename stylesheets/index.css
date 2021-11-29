@@ -2,13 +2,19 @@
     font-size: 40px;
 }
 
-.card {
-    background-color: inherit;
-    color: goldenrod;
-    border-color: gold;
-    border-width: 2.5px;
-}
-
 #frontLogo {
     border-radius: 50%;
+}
+
+#name {
+    display: block;
+    color: #d63447;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#loginButton input {
+    display: block;
+    margin: auto;
 }

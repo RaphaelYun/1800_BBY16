@@ -13,6 +13,7 @@
 
 #welcomeText {
     text-align: center;
+    font-size: 42px;
 }
 
 .modal {
@@ -30,7 +31,7 @@
 
 .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: #f5f4e8;
     margin: 40vh auto;
     padding: 10px;
     border: 1px solid #888;

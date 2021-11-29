@@ -57,74 +57,76 @@
   </div>
 
   <section id="content">
-    <div class="cuisineContainer">
-      <h5>Select your first favorite cousine.</h5>
-      <select id="CuisinePreference1" class="form-select" aria-label="Default select example">
-        <option value="none">None</option>
-        <option value="american">American</option>
-        <option value="arab">Arab</option>
-        <option value="british">British</option>
-        <option value="chinese">Chinese</option>
-        <option value="french">French</option>
-        <option value="indian">Indian</option>
-        <option value="japanese">Japanese</option>
-        <option value="korean">Korean</option>
-        <option value="mexican">Mexican</option>
-        <option value="russian">Russian</option>
-        <option value="thai">Thai</option>
-        <option value="vietnamese">Vietnamese</option>
-      </select>
-    </div>
-
-    <div class="cuisineContainer">
-      <h5>Select your second favorite cousine.</h5>
-      <select id="CuisinePreference2" class="form-select" aria-label="Default select example">
-        <option value="none">None</option>
-        <option value="american">American</option>
-        <option value="arab">Arab</option>
-        <option value="british">British</option>
-        <option value="chinese">Chinese</option>
-        <option value="french">French</option>
-        <option value="indian">Indian</option>
-        <option value="japanese">Japanese</option>
-        <option value="korean">Korean</option>
-        <option value="mexican">Mexican</option>
-        <option value="russian">Russian</option>
-        <option value="thai">Thai</option>
-        <option value="vietnamese">Vietnamese</option>
-      </select>
-    </div>
-
-    <div class="cuisineContainer">
-      <h5>Do you avoid any of these?</h5>
-      <div class="checkboxContainer">
-        <input class="form-check-input" type="checkbox" value="" id="check0">
-        <label class="form-check-label" for="flexCheckDefault">
-          Nuts
-        </label>
+    <div id="preference-content">
+      <div class="cuisineContainer">
+        <h5>Select your first favorite cousine.</h5>
+        <select id="CuisinePreference1" class="form-select" aria-label="Default select example">
+          <option value="none">None</option>
+          <option value="american">American</option>
+          <option value="arab">Arab</option>
+          <option value="british">British</option>
+          <option value="chinese">Chinese</option>
+          <option value="french">French</option>
+          <option value="indian">Indian</option>
+          <option value="japanese">Japanese</option>
+          <option value="korean">Korean</option>
+          <option value="mexican">Mexican</option>
+          <option value="russian">Russian</option>
+          <option value="thai">Thai</option>
+          <option value="vietnamese">Vietnamese</option>
+        </select>
       </div>
-      <div class="checkboxContainer">
-        <input class="form-check-input" type="checkbox" value="" id="check1">
-        <label class="form-check-label" for="flexCheckDefault">
-          Lactose
-        </label>
+  
+      <div class="cuisineContainer">
+        <h5>Select your second favorite cousine.</h5>
+        <select id="CuisinePreference2" class="form-select" aria-label="Default select example">
+          <option value="none">None</option>
+          <option value="american">American</option>
+          <option value="arab">Arab</option>
+          <option value="british">British</option>
+          <option value="chinese">Chinese</option>
+          <option value="french">French</option>
+          <option value="indian">Indian</option>
+          <option value="japanese">Japanese</option>
+          <option value="korean">Korean</option>
+          <option value="mexican">Mexican</option>
+          <option value="russian">Russian</option>
+          <option value="thai">Thai</option>
+          <option value="vietnamese">Vietnamese</option>
+        </select>
       </div>
-      <div class="checkboxContainer">
-        <input class="form-check-input" type="checkbox" value="" id="check2">
-        <label class="form-check-label" for="flexCheckDefault">
-          Peanuts
-        </label>
+  
+      <div class="cuisineContainer">
+        <h5>Do you avoid any of these?</h5>
+        <div class="checkboxContainer">
+          <input class="form-check-input" type="checkbox" value="" id="check0">
+          <label class="form-check-label" for="flexCheckDefault">
+            Nuts
+          </label>
+        </div>
+        <div class="checkboxContainer">
+          <input class="form-check-input" type="checkbox" value="" id="check1">
+          <label class="form-check-label" for="flexCheckDefault">
+            Lactose
+          </label>
+        </div>
+        <div class="checkboxContainer">
+          <input class="form-check-input" type="checkbox" value="" id="check2">
+          <label class="form-check-label" for="flexCheckDefault">
+            Peanuts
+          </label>
+        </div>
+        <div class="checkboxContainer">
+          <input class="form-check-input" type="checkbox" value="" id="check3">
+          <label class="form-check-label" for="flexCheckDefault">
+            Meat
+          </label>
+        </div>
       </div>
-      <div class="checkboxContainer">
-        <input class="form-check-input" type="checkbox" value="" id="check3">
-        <label class="form-check-label" for="flexCheckDefault">
-          Meat
-        </label>
+  
+      <div id="saveContainer">
+        <button type="button" class="btn btn-warning btn-lg" onclick="savePreference()">Save</button>
       </div>
-    </div>
-
-    <div id="saveContainer">
-      <button type="button" class="btn btn-info btn-lg" onclick="savePreference()">Save</button>
     </div>
   </section>
 
