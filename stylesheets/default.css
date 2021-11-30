@@ -3,9 +3,11 @@ body {
 }
 
 #logo {
+  background-color: #ffd6c2;
   margin: 0 auto;
   height: 60px;
   width: 100%;
+  border-bottom: 2px solid black;
 }
 
 #name {
@@ -20,11 +22,13 @@ body {
     width: 100%;
     height: calc(100vh - 115px);
     overflow: scroll;
+    /*
     background-image: url("../images/background.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    */
     padding: 20px;
 }
 

@@ -1,19 +1,24 @@
-.random {
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 100px;
-}
-
 #welcomeBox {
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 #welcomeText {
     text-align: center;
     font-size: 42px;
+}
+
+#frontLogo {
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+.random {
+    display: block;
+    position: absolute;
+    left: 10%;
+    bottom: 100px;
+    width: 80%;
 }
 
 .modal {

@@ -51,45 +51,47 @@
   </div>
 
   <section id="content">
-    <div id="profile-content">
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <label> Username </label>
+    <div id="aboutModal" class="modal">
+      <div class="modal-content">
+        <h5>Who We Are</h5>
+        <p>We are developers at the Computer System Technology at BCIT. We came up with this idea of FOODIE to help people like us who are busy with life to have more time to spend on their work and lives. This app will provide less effort and time to think about the food and the next meal which helps to save more time and spend less time on choosing meals. Moreover, FOODIE will provide three random food option every time, the most favorite ones can be added to the favorite page. The random food will be based on the user’s mood and nationality. Throughout this app we developed, we hope you all like it and enjoy your meal.</p>
       </div>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <input id="input_name" type="text">
-      </div>
-      <br>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <label> Email </label>
-      </div>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <input id="input_email" type="text">
-      </div>
-      <br>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-info btn-sm" id="apply" onclick="updateProfile()">
-          Apply
-        </button>
-      </div>
-      <br>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-danger btn-sm" id="logout" onclick="logout()">
-          Logout
-        </button>
-      </div>
-      <br><br><br>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-warning btn-sm" id="reset" onclick="location.href = 'preference.html';">
-          Reset Food Preference
-        </button>
-      </div>
-      <br><br>
-      <div id="contacts">
-        <p>Email: foodie16@gmail.com</p>
-        <p>Phone: 604-123-4567</p>
-        <!-- <p><a href="./about.html">About</a></p> -->
     </div>
-    </div>
+
+      <div id="profile-content">
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <label> Username </label>
+        </div>
+        <div class="box d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <input id="input_name" type="text">
+        </div>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <label> Email </label>
+        </div>
+        <div class="box d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <input id="input_email" type="text">
+        </div>
+        <div class="box d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-info btn-sm" id="apply" onclick="updateProfile()">
+            Apply
+          </button>
+        </div>
+        <div class="box d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-warning btn-sm" id="configure" onclick="location.href = 'preference.html';">
+            Configure Food Preference
+          </button>
+        </div>
+        <div class="box d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-danger btn-sm" id="logout" onclick="logout()">
+            Logout
+          </button>
+        </div>
+        <div class="box" id="contacts">
+          <p>Email: foodie16@gmail.com</p>
+          <p>Phone: 604-123-4567</p>
+          <p id="aboutText" onclick="about()">About</p>
+        </div>
+      </div>
   </section>
 
   <nav id="navbar">

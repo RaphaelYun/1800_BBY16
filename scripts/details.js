@@ -9,6 +9,7 @@ function showDetails() {
       document.getElementById("foodImage").src = "./images/foods/p" + doc.data().code + ".jpg";
       document.getElementById("foodName").innerHTML = doc.data().name;
       document.getElementById("foodDescription").innerHTML = doc.data().description;
+      document.getElementById("foodMap").href = "https://www.google.com/maps/search/" + doc.data().name;
 
       firebase.auth().onAuthStateChanged(user => {
         if (user) {
@@ -16,8 +17,8 @@ function showDetails() {
             .then(userDoc => {
               //get the user's favorite list
               var favoriteList = userDoc.data().favorites;
-              if (favoriteList.includes(doc.data().code)) {
-                document.getElementById("foodFavorite").innerHTML = "Remove from Favorite";
+              if (favoriteList.includes(doc.data().code)) { //if the food is in the user's favorite list
+                document.getElementById("foodFavorite").innerHTML = '<i class="material-icons">favorite</i>';
                 document.getElementById("foodFavorite").onclick = function () {
                   if (user) {
                     db.collection("users").doc(user.uid).update({
@@ -30,8 +31,8 @@ function showDetails() {
                   }
 
                 };
-              } else {
-                document.getElementById("foodFavorite").innerHTML = "Add to Favorite";
+              } else { //if the food is NOT in the user's favorite list
+                document.getElementById("foodFavorite").innerHTML = '<i class="material-icons">favorite_border</i>';
                 document.getElementById("foodFavorite").onclick = function () {
                   if (user) {
                     db.collection("users").doc(user.uid).update({

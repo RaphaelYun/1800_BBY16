@@ -57,3 +57,13 @@ function updateProfile() {
   })
 
 }
+
+function about() {
+  document.getElementById("aboutModal").style.display = "block";
+}
+
+window.onclick = function (event) {
+  if (event.target == document.getElementById("aboutModal")) {
+    document.getElementById("aboutModal").style.display = "none";
+  }
+}

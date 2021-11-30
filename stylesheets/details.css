@@ -1,5 +1,5 @@
 #foodDetails {
-    background-color: #f5f4e8;
+    background-color: #ffd6c2;
     width: 100%;
     margin: auto;
     padding: 20px;
@@ -11,8 +11,29 @@
     margin-top: 10px;
 }
 
+#foodButtons {
+    width: 100%;
+    height: 40px;
+    margin: auto;
+}
+
+#foodMap {
+    display: block;
+    float: left;
+    width: 75%;
+    margin: auto;
+}
+
 #foodFavorite {
     display: block;
-    width: 50%;
+    float: left;
+    width: 20%;
     margin: auto;
+    margin-left: 5%;
+    padding: 0px;
+}
+
+#foodFavorite i {
+    font-size: 27px;
+    margin-top: 5px;
 }
