@@ -46,10 +46,10 @@ function savePreference() {
     userAvoid[i] = document.getElementById('check' + i).checked;
   }
 
-  if (userCuisine1 == userCuisine2) {
+  if (userCuisine1 == userCuisine2 && !(userCuisine1 == 'none' && userCuisine1 == 'none')) {
     alert("You cannot have 2 same cuisines.");
   } else if(userCuisine1 == 'none' && userCuisine2 != 'none') {
-    alert("You cannot have second favorite cousine only.");
+    alert("You cannot have second favorite cuisine only.");
   } else {
     //write the values in the database
     firebase.auth().onAuthStateChanged(user => {
@@ -60,7 +60,7 @@ function savePreference() {
             Avoid: userAvoid
           })
           .then(() => {
-            console.log("Document successfully updated!");
+            alert("Your preference has been updated.");
             window.location.href = "main.html";
           })
       } else {
