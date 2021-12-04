@@ -46,21 +46,22 @@ function savePreference() {
     userAvoid[i] = document.getElementById('check' + i).checked;
   }
 
+  //conditions on cuisine preferences - they are self-explanatory with the followed alert messages
   if (userCuisine1 == userCuisine2 && !(userCuisine1 == 'none' && userCuisine1 == 'none')) {
     alert("You cannot have 2 same cuisines.");
   } else if(userCuisine1 == 'none' && userCuisine2 != 'none') {
     alert("You cannot have second favorite cuisine only.");
   } else {
-    //write the values in the database
     firebase.auth().onAuthStateChanged(user => {
       if (user) {
+        //write the values in the database
         db.collection("users").doc(user.uid).update({
             FavoriteCuisine1: userCuisine1,
             FavoriteCuisine2: userCuisine2,
             Avoid: userAvoid
           })
           .then(() => {
-            alert("Your preference has been updated.");
+            alert("Your preference has been updated."); //writing is succesful, return the user to the main page
             window.location.href = "main.html";
           })
       } else {

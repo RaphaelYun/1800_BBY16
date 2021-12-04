@@ -1,11 +1,11 @@
 function search() {
-  document.getElementById('searchResult').replaceChildren();
+  document.getElementById('searchList').replaceChildren(); //empty the list first
   let CardTemplate = document.getElementById("CardTemplate");
   let SearchWord = document.getElementById("searchBox").value;
   var n = 0;
   db.collection("Food").get()
     .then(snap => {
-      snap.forEach(doc => { //iterate thru each doc
+      snap.forEach(doc => { //iterate through each food
         if (SearchWord != "") {
           if (doc.data().name.toLowerCase().includes(SearchWord.toLowerCase())) {
             var foodId = doc.data().code;
@@ -26,14 +26,14 @@ function search() {
             newcard.querySelector('.card-image').setAttribute("id", "cimage_" + foodId);
   
             //attach to gallery
-            document.getElementById('searchResult').appendChild(newcard);
+            document.getElementById('searchList').appendChild(newcard);
             n++;
           }
         }        
       })
-      if (n == 0) {
+      if (n == 0) { //if there is no food that match with the keyword, attach a closure card instead
         let newcard = ClosureTemplate.content.cloneNode(true);
-        document.getElementById('searchResult').appendChild(newcard);
+        document.getElementById('searchList').appendChild(newcard);
       }
     })
 

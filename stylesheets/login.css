@@ -1,15 +1,15 @@
-.login-content {
-    width: 90%;
-    height: 100%;
-    margin: auto;
+.loginContainer {
+  width: 90%;
+  height: 100%;
+  margin: auto;
 }
 
 .form-signin {
-    width: 100%;
-    max-width: 500px;
-    padding: 15px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

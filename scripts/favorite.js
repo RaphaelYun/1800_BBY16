@@ -1,5 +1,6 @@
 function displayFavorite() {
-  //this function is too complicated - there is a better way of writing this code for sure, but I will replace them with comments for now. 
+  //this function is too complicated - there is a better way of writing this code for sure, but I will replace them with comments for now
+  //you might find this function useful to understand displayPrevious() since it has a similar structure
   let n = 0;
   firebase.auth().onAuthStateChanged(user => {
     //check who the user is
@@ -10,7 +11,7 @@ function displayFavorite() {
           var favoriteList = userDoc.data().favorites;
           db.collection("Food").get()
             .then(snap => {
-              //iterate thru each doc
+              //iterate through each food
               snap.forEach(doc => {
                 //for each food in the database, compare it to the food in the user's favorite list
                 for (var i = 0; i < favoriteList.length; i++) {
@@ -39,13 +40,16 @@ function displayFavorite() {
                   }
                 }
               })
-                if (n == 0) {
+                if (n == 0) { //if there is no favorite food, attach a closure card instead
                   let newcard = ClosureTemplate.content.cloneNode(true);
                   document.getElementById('favoriteList').appendChild(newcard);
                 }
             })
 
         })
+    } else {
+      alert("You must be logged in.");
+      window.location.assign("login.html");
     }
   })
 }

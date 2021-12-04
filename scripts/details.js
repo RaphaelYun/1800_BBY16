@@ -4,7 +4,7 @@ function showDetails() {
   let collection = params.searchParams.get("collection"); //parse "collection"
   let id = params.searchParams.get("id"); //parse "id"
 
-  db.collection(collection).doc(id).get()
+  db.collection(collection).doc(id).get() //using the url, locate the food in the food database list
     .then((doc) => {
       document.getElementById("foodImage").src = "./images/foods/p" + doc.data().code + ".jpg";
       document.getElementById("foodName").innerHTML = doc.data().name;
@@ -54,7 +54,7 @@ function showDetails() {
 }
 showDetails();
 
-function addToPrevious() {
+function addToPrevious() { //as the food is displayed, add it to the previous list
   let params = new URL(window.location.href);
   let collection = params.searchParams.get("collection"); //parse "collection"
   let id = params.searchParams.get("id"); //parse "id"
@@ -68,19 +68,22 @@ function addToPrevious() {
               //get the user's previous list
               var previousList = userDoc.data().previous;
               for (var i = 0; i < previousList.length; i++) {
-                if (doc.data().code == previousList[i]) {
-                  previousList.splice(i, 1);
+                if (doc.data().code == previousList[i]) { //check if the food is already on the previous list
+                  previousList.splice(i, 1); //if it is, remove it (in order to move it to the top)
                   break;
                 }
               }
-              previousList.splice(0, 0, doc.data().code);
-              while (previousList.length > 10) {
+              previousList.splice(0, 0, doc.data().code); //add the food to the list
+              while (previousList.length > 10) { //limit the length of the previous list to 10
                 previousList.pop();
               }
               db.collection("users").doc(user.uid).update({
                 previous: previousList
               })
             });
+        } else {
+          alert("You must be logged in.");
+          window.location.assign("login.html");
         }
       })
     })

@@ -1,20 +1,20 @@
 .lead {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 #frontLogo {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 #name {
-    display: block;
-    color: #d63447;
-    font-size: 35px;
-    text-align: center;
-    text-decoration: none;
+  display: block;
+  color: #d63447;
+  font-size: 35px;
+  text-align: center;
+  text-decoration: none;
 }
 
 #loginButton input {
-    display: block;
-    margin: auto;
+  display: block;
+  margin: auto;
 }

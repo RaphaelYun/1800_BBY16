@@ -33,13 +33,15 @@ function displayPrevious() {
                   }
                 })
               }
-              console.log(n)
-              if (n == 0) {
+              if (n == 0) { //if there is no previous food, attach a closure card instead
                 let newcard = ClosureTemplate.content.cloneNode(true);
                 document.getElementById('previousList').appendChild(newcard);
               }
             })
         })
+    } else {
+      alert("You must be logged in.");
+      window.location.assign("login.html");
     }
   })
 }

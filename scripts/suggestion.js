@@ -1,5 +1,8 @@
 /*
-Avoid Tag
+Hard coded database values for foods
+invoke this function to write the data to the database
+
+Avoid Tags
 0 = Nuts
 1 = Lactose
 2 = Peanuts
@@ -198,7 +201,8 @@ function writeFoodList() {
     });
 }
 
-var n = 0;
+var foodCounter = 0; //food counter - how many foods were added to the list so far?
+var howMany = 3; //defines how many foods will be suggested to the user
 
 function displayFood(randId) {
     db.collection("Food").get()
@@ -224,53 +228,63 @@ function displayFood(randId) {
 
             //attach to gallery
             document.getElementById('suggestionList').appendChild(newcard);
-            n++;
+            foodCounter++;
 
-            if (n == 3) {
+            if (foodCounter == howMany) { //display three foods and then attach the refresh at the bottom
                 newcard = ShuffleTemplate.content.cloneNode(true);
                 document.getElementById('suggestionList').appendChild(newcard);
             }
         })
 }
 
-function suggestion() {
-    document.getElementById('suggestionList').replaceChildren();
-    n = 0;
-    var suggestionCandidates = [];
+function suggestion() { //randomize a list of foods, using the preference and emotion values to prioritize specific foods
+    document.getElementById('suggestionList').replaceChildren(); //empty the list first
+    foodCounter = 0; //reset the food counter
+    var suggestionCandidates = []; //candidates of the foods that will be added to the list
     firebase.auth().onAuthStateChanged(user => {
         if (user) {
             db.collection("users").doc(user.uid).get()
                 .then(userDoc => {
-                    var avoidList = userDoc.data().Avoid;
+                    var avoidList = userDoc.data().Avoid; //list of foods that will NOT be added to the list
+                    var emo = userDoc.data().emotion; //the emotion the user picked on the emotion modal
                     var fav1 = userDoc.data().FavoriteCousine1;
                     var fav2 = userDoc.data().FavoriteCousine2;
-                    var emo = userDoc.data().emotion;
                     db.collection("Food").get()
                         .then(snap => {
-                            snap.forEach(doc => {
+                            snap.forEach(doc => { //iterate through each food
+                                //all foods in the database have tags such as nationality, emotion, avoid
+                                //the avoid tags refer to the agllergy the food might contain, as well as tags like meat for vegetarians
                                 let avoid = 0;
                                 for (let i = 0; i < doc.data().Avoid.length; i++) {
                                     if (doc.data().Avoid[i] && avoidList[i]) {
+                                        //see if any of the food's avoid tags collide with the user's preference settings 
+                                        //if there is one, this food cannot pass the condition (line 264) and will not be added as a candidate
                                         avoid++;
                                     }
                                 }
                                 if (avoid == 0) {
-                                    suggestionCandidates.push(doc.data().code);
+                                    suggestionCandidates.push(doc.data().code); //add the food to the candidate list
                                     if (doc.data().nationality == fav1 || doc.data().nationality == fav2) {
+                                        //if the food's nationality tag match with the user's favorite cuisine, it will be added to the candidate list one more time
                                         suggestionCandidates.push(doc.data().code);
                                     }
                                     if (doc.data().emotion == emo) {
+                                        //if the food's emotion tag match with the user's emotion, it will be added to the candidate list one more time
                                         suggestionCandidates.push(doc.data().code);
                                     }
                                 }
                             })
+                            //candidates are all dicided, now can randomize
+                            //the more tags the food has, the more candidates it will have
+                            //the ratio can always be readjusted - modify the line 266, 269, 273
                         }).then(() => {
-                            var suggestionList = [];
+                            var suggestionList = []; //this list represents the final list of foods that will be suggested to the user
                             var randId = 0;
-                            for (var i = 0; i < 3; i++) {
+                            for (var i = 0; i < howMany; i++) {
                                 do {
+                                    //generate a random number and use it to decide which food will be suggested
                                     randId = Math.floor(Math.random() * suggestionCandidates.length);
-                                } while (suggestionList.includes(randId))
+                                } while (suggestionList.includes(randId)) //this condition ensures that there is no duplicats on the list
                                 displayFood(randId);
                                 suggestionList.push(randId);
                             }

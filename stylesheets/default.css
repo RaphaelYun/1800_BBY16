@@ -19,17 +19,10 @@ body {
 }
 
 #content {
-    width: 100%;
-    height: calc(100vh - 115px);
-    overflow: scroll;
-    /*
-    background-image: url("../images/background.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    */
-    padding: 20px;
+  width: 100%;
+  height: calc(100vh - 115px);
+  overflow: auto;
+  padding: 20px;
 }
 
 #navbar {
